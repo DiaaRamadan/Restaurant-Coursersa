@@ -269,7 +269,9 @@ h3.menu-item-title{
     }
     .menu-item-description{
         text-align: center;
+        padding-right: 0;
     }
+
 }
 
 /*Small devices (landscape phones, 576px and up)*/
