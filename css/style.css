@@ -157,6 +157,7 @@ body{
     margin: 50px auto 0 auto;
     overflow: hidden;
     width: 200px;
+    border: 1px solid #000;
 }
 
 .category-tile:hover{
@@ -174,7 +175,65 @@ body{
     text-transform: uppercase;
     color: #fff;
 }
+.single-item{
+    margin-top: 40px;
+    display: flex;
+}
+.single-item-img{
+    position: relative;
+    width: 250px;
+    /*height: 150px;*/
+}
+.single-item-img span{
+    position: absolute;
+    bottom: 0;
+    padding: 5px 8px;
+    background: #222;
+    border-radius: 50%;
+    right: 0;
+}
 
+.menu-item-tile{
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.menu-item-tile .menu-item-price{
+    font-size: 1.1em;
+    text-align: right;
+    margin-right: -15px;
+    margin-top: -15px;
+}
+.menu-item-tile .menu-item-price span{
+    font-size: 0.6em;
+}
+.menu-item-photo{
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+.menu-item-photo div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    text-align: center;
+    background-color: #557c3e;
+}
+.menu-item-description{
+    padding-right: 30px;
+}
+h3.menu-item-title{
+    margin: 0 0 10px;
+}
+.menu-item-details{
+    font-size: 0.9em;
+    font-style: italic;
+}
  /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) {
     .jumbotron{
@@ -194,11 +253,22 @@ body{
         padding-top: 5px;
         font-size: 5vm;
     }
-    .card-footer hr{
-        width: 50%;
+    .card-footer hr,
+    hr{
+        width: 80%;
         display: block !important;
         height: 1px;
         background: #E7E7E7;
+    }
+    .menu-item-photo{
+        margin: auto;
+    }
+    .menu-item-tile .menu-item-price{
+        text-align: center;
+        margin-top: 0;
+    }
+    .menu-item-description{
+        text-align: center;
     }
 }
 
